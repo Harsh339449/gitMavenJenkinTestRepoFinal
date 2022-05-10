@@ -22,7 +22,7 @@ pipeline{
 //             }
 //         }
           stage('Deploy to Tomcat'){
-     bat "cp target/SampleWebApplication.war /"${tomcatWeb}/SampleWebApplication.war/""
+         "cp target/SampleWebApplication.war /"${tomcatWeb}/SampleWebApplication.war/""
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
